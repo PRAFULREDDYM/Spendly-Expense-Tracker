@@ -129,5 +129,6 @@ Spendly follows a modern **Serverless + Offline-First** architectural pattern:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Praful Reddy</sub>
+  <sub>Built by Praful Reddy</sub>
 </div>
+
