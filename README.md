@@ -1,80 +1,133 @@
-# Expense Tracker
+# <img src="docs/assets/hero.png" width="100%" alt="Spendly Banner" />
 
-Production-ready Vite + React + TypeScript expense tracker with a local SQLite backend, real auth, and typed API contracts.
+<div align="center">
 
-## Local Setup
+# 💎 Spendly
+**The Ultimate Full-Stack, Offline-First Financial Intelligence Platform**
 
-1. Install dependencies:
-   `npm install`
-2. Create a local environment file from [.env.example](/Users/prafulreddy/Desktop/codex/EXPENSE_TRACKER/.env.example) and fill in the secrets.
-3. Start the app:
-   `npm run dev`
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Backend-green?logo=supabase)](https://supabase.com/)
+[![Capacitor](https://img.shields.io/badge/Capacitor-Mobile-blue?logo=capacitor)](https://capacitorjs.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-The dev script launches the frontend and backend together and applies pending SQL migrations automatically on startup.
+---
 
-If you want to inspect or apply migrations separately, you can still run:
+**Spendly** is a premium, offline-first fintech app built with React 19, Supabase, and Capacitor. It offers seamless cloud sync, IndexedDB caching, and high-fidelity animations. Track expenses, manage budgets, and monitor recurring bills across iOS, Android, and Web with native-grade performance and a stunning, modern UI designed for power users.
 
-- `npm run migrate`
-- `npm run migrate:status`
+[**Explore the Code**](https://github.com/PRAFULREDDYM/EXPENSE_TRACKER) • [**Setup Guide**](docs/SUPABASE_SETUP.md) • [**Mobile Deployment**](docs/MOBILE_DEPLOYMENT.md)
 
-## Environment Variables
+</div>
 
-`APP_URL`
-Frontend origin used for redirects and links.
+---
 
-`HOST`
-Backend host binding. Defaults to `127.0.0.1`.
+## ✨ Key Features
 
-`PORT`
-Backend port used by the Express server.
+### 📡 Offline-First & Real-Time Sync
+Built with a "Cloud-Hybrid" architecture, Spendly uses **Dexie (IndexedDB)** for instantaneous local feedback and **Supabase (PostgreSQL)** for long-term cloud durability. Your data is always available, even without an internet connection.
 
-`API_PREFIX`
-Prefix for all API routes, usually `/api`.
+### 📱 Cross-Platform Excellence
+A single codebase deployed as a **PWA**, **Native iOS**, and **Native Android** app. Optimized for mobile haptics, status bar styling, and native keyboard interactions.
 
-`VITE_API_BASE_URL`
-Client-facing API base path. Keep this relative in local development.
+### 📊 Intelligent Insights
+Visual analysis of your spending habits. Group expenses by category, track your budget progress in real-time, and get smart reminders for recurring bills.
 
-`SQLITE_PATH`
-SQLite file path relative to the repo root.
+<div align="center">
+  <img src="docs/assets/desktop-dashboard.png" width="90%" alt="Dashboard" />
+</div>
 
-`UPLOAD_DIR`
-Directory used for uploaded receipt images. Uploaded files are stored by URL, not base64.
+---
 
-`PRIMARY_CURRENCY`
-Currency used for summaries and normalized reporting.
+## 📸 App Showcase
 
-`REPORT_HORIZON_DAYS`
-How far recurring expenses should be projected into the future.
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center">
+        <img src="docs/assets/screen-dashboard.png" width="200" alt="Mobile Dashboard" /><br />
+        <b>Dashboard</b>
+      </td>
+      <td align="center">
+        <img src="docs/assets/screen-history.png" width="200" alt="Transactions" /><br />
+        <b>History</b>
+      </td>
+      <td align="center">
+        <img src="docs/assets/screen-analysis.png" width="200" alt="Analysis" /><br />
+        <b>Analysis</b>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="docs/assets/screen-quickadd.png" width="200" alt="Quick Add" /><br />
+        <b>Quick Add</b>
+      </td>
+      <td align="center">
+        <img src="docs/assets/screen-profile.png" width="200" alt="Profile" /><br />
+        <b>Pro User Profile</b>
+      </td>
+      <td align="center">
+        <img src="docs/assets/desktop-history.png" width="200" alt="Desktop View" /><br />
+        <b>Desktop Layout</b>
+      </td>
+    </tr>
+  </table>
+</div>
 
-`JWT_ACCESS_SECRET`, `JWT_REFRESH_SECRET`
-Long random secrets used to sign auth tokens.
+---
 
-`SESSION_COOKIE_NAME`, `REFRESH_COOKIE_NAME`
-Cookie names for auth session storage.
+## 🛠 Tech Stack
 
-`AUTH_COOKIE_SECURE`, `COOKIE_SECURE`, `AUTH_COOKIE_PATH`, `AUTH_COOKIE_SAMESITE`, `AUTH_COOKIE_DOMAIN`, `AUTH_ISSUER`
-Optional cookie/session overrides used by the auth layer.
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, TypeScript, TanStack Query |
+| **Backend** | Supabase (Database, Auth, Storage, Edge Functions) |
+| **Mobile** | Capacitor 8.0, Haptics, Local Notifications |
+| **Offline DB** | Dexie.js (IndexedDB wrapper) |
+| **Animations** | Framer Motion, Motion One |
+| **Styling** | Tailwind CSS 4.0, Lucide Icons |
+| **Validation** | Zod, TypeScript Type Guards |
 
-## Migrations
+---
 
-SQL migrations live in [db/migrations](/Users/prafulreddy/Desktop/codex/EXPENSE_TRACKER/db/migrations).
+## 🚀 Getting Started
 
-Apply them with:
+### Prerequisites
+- **Node.js** (v20+)
+- **NPM** or **Yarn**
 
-`npm run migrate`
+### Local Installation
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/spendly.git
+    cd spendly
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Set up Environment Variables**:
+    Create a `.env` file based on `.env.example` and add your **Supabase URL** and **Anon Key**.
+4.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-The migration runner tracks applied files in the database itself, so it is safe to rerun.
+### 📱 Native Deployment
+Check out the [**Mobile Deployment Guide**](docs/MOBILE_DEPLOYMENT.md) for detailed instructions on building for iOS and Android using Capacitor.
 
-## Production Notes
+---
 
-- Vite production builds ship with hashed asset names and sourcemaps disabled.
-- The backend uses secure cookie-based JWT auth, SQLite persistence, and static receipt uploads under `UPLOAD_DIR`.
-- Server logs should use structured JSON in production and readable console output in development.
-- No secrets, API keys, or hardcoded user data are committed to the repo.
+## 🏗 Architecture
 
-## Deployment
+Spendly follows a modern **Serverless + Offline-First** architectural pattern:
 
-- Build the frontend with `npm run build`.
-- Run the backend with the same environment variables used locally.
-- Persist the SQLite database file and uploads directory on durable storage.
-- Point your reverse proxy or platform router at the API and serve the `dist/` directory for the client.
+1.  **UI Core**: React 19 handles the reactive render cycle.
+2.  **Server State**: `useQuery` and `useMutation` (TanStack Query) manage data fetching from Supabase.
+3.  **Local Sync Engine**: A custom sync layer ensures that every write is saved to **IndexedDB** immediately and queued for background sync to Supabase when a connection is available.
+4.  **Security**: Native Supabase Auth integration for secure user sessions and row-level security (RLS) in the database.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Praful Reddy</sub>
+</div>
