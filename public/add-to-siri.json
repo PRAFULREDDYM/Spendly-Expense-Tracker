@@ -1,0 +1,15 @@
+{
+  "name": "Log Expense",
+  "description": "Suggested Siri Shortcut that opens Quick Add on your iPhone.",
+  "launch_url": "/quick-add",
+  "quick_add_url": "/quick-add",
+  "suggested_phrases": [
+    "Log expense",
+    "Add an expense",
+    "Open quick add"
+  ],
+  "notes": [
+    "Open the Shortcuts app, create an Open URL action, and point it to /quick-add on your deployed domain.",
+    "This PWA can provide the URL target, while a polished Siri integration still requires native iOS tooling."
+  ]
+}

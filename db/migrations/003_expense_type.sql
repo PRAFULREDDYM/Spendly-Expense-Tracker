@@ -1,0 +1,1 @@
+ALTER TABLE expenses ADD COLUMN type TEXT NOT NULL DEFAULT 'expense';

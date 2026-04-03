@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F1117" />
+    <title>Privacy Policy - Expense Tracker</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f1117;
+        --card: #181c25;
+        --text: #e8eaf0;
+        --muted: #7c8196;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px;
+        background:
+          radial-gradient(circle at top, rgba(43, 127, 255, 0.16), transparent 38%),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100%, 760px);
+        margin: 0 auto;
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        background: rgba(24, 28, 37, 0.96);
+        padding: 32px 24px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 1.1rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .note {
+        margin-top: 18px;
+        padding: 16px 18px;
+        border-radius: 18px;
+        background: rgba(43, 127, 255, 0.12);
+        border: 1px solid rgba(43, 127, 255, 0.24);
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p>
+        Expense Tracker syncs your workspace through Supabase so the same account is available on
+        your phone, tablet, and laptop. Signed-in devices also keep an offline cache for fast
+        access when connectivity is limited.
+      </p>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li>Account, finance, and receipt data you enter is stored in your Supabase-backed workspace.</li>
+        <li>Signed-in devices cache recent workspace data locally to support offline viewing.</li>
+        <li>Hosting providers may still record standard web logs for availability and security.</li>
+      </ul>
+
+      <h2>How we use data</h2>
+      <ul>
+        <li>To render your finance workspace, charts, history, and quick-add shortcuts across devices.</li>
+        <li>To sync your categories, budgets, expenses, preferences, and receipts across signed-in devices.</li>
+        <li>To support backup and restore files only when you explicitly export or import them.</li>
+        <li>To enable installable PWA behavior and quick-add entry points.</li>
+      </ul>
+
+      <h2>What we do not do</h2>
+      <ul>
+        <li>We do not sell personal data.</li>
+        <li>We do not use your finance data for advertising, profiling, or third-party analytics.</li>
+      </ul>
+
+      <p class="note">
+        Your data syncs through your own authenticated account and is cached locally for offline
+        use. We do not sell or share that financial data with third parties.
+      </p>
+    </main>
+  </body>
+</html>

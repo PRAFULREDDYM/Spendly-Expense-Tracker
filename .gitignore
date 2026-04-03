@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.npm-cache/
+venv/
+.python-version
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+dev-dist/
+build/
+coverage/
+android/app/build/
+ios/App/Pods/
+ios/DerivedData/
+
+# Environment and Secrets
+.env*
+!.env.example
+*.keystore
+*.jks
+
+# IDE and OS
+.DS_Store
+.vscode/
+.idea/
+android/.idea/workspace.xml
+
+# Storage and Data
+data/
+storage/
+*.log
+
+# Misc
+.cache/
+.parcel-cache/
+.next/
+
